@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <center>
+        <div class="main" id="bac">
+            <div class="dis" id="di">
+                <p id="display"></p>
+            </div>
+            <div id="cl">
+                <input type="color" value="#985d5d" onchange="co_ke(this.value);">
+                <input type="color" value="#985d5d" onchange="co_dis(this.value);">
+                <input type="color" value="#985d5d" onchange="co_ba(this.value);">
+            </div>
+            <div class="keys" id="boc">
+                <div class="but" id="btn-ac" data-value="ac"><span>Ac</span></div>
+                <div class="but" id="btn-sing" data-value="sign"><span>+/-</span></div>
+                <div class="but" id="btn-ac" data-value="%"><span>%</span></div>
+                <div class="but" id="btn-ac" data-value="/"><span>/</span></div>
+                <div class="but" id="btn-7" data-value="7"><span>7</span></div>
+                <div class="but" id="btn-8" data-value="8"><span>8</span></div>
+                <div class="but" id="btn-9" data-value="9"><span>9</span></div>
+                <div class="but" id="btn-*" data-value="*"><span>*</span></div>
+                <div class="but" id="btn-4" data-value="4"><span>4</span></div>
+                <div class="but" id="btn-5" data-value="5"><span>5</span></div>
+                <div class="but" id="btn-6" data-value="6"><span>6</span></div>
+                <div class="but" id="btn--" data-value="-"><span>-</span></div>
+                <div class="but" id="btn-1" data-value="1"><span>1</span></div>
+                <div class="but" id="btn-2" data-value="2"><span>2</span></div>
+                <div class="but" id="btn-3" data-value="3"><span>3</span></div>
+                <div class="but" id="btn-+" data-value="+"><span>+</span></div>
+                <div class="but" id="btn-0" data-value="0"><span>0</span></div>
+                <div class="but" id="btn-." data-value="."><span>.</span></div>
+                <div class="but" id="btn-=" data-value="="><span>=</span></div>
+            </div>
+        </div>
+        </div>
+    </center>
+
+    <script src="cal.js"></script>
+</body>
+
+</html>
